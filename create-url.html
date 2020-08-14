@@ -14,6 +14,7 @@
         a.appendChild(linkText);
         a.title = inputUrl.value;
         a.href = inputUrl.value;
+        a.target = '_blank';
         document.body.appendChild(a);
         document.body.appendChild(document.createElement("br"););
         inputUrl.value='';
