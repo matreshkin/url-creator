@@ -2,7 +2,7 @@
   <head><title>Create URL</title></head>
   <body>
   <form id = 'form1'>
-    Input url: <input type='text' name='input_url'>
+    Input url: <input type='text' id='input_url'>
     <input type="button" value="Create link" id='input_create' >
   </form>
 
@@ -15,7 +15,7 @@
         a.title = inputUrl.value;
         a.href = inputUrl.value;
         document.body.appendChild(a);
-        document.write("<br>");
+        document.body.appendChild(document.createElement("br"););
         inputUrl.value='';
       }
     </script>
