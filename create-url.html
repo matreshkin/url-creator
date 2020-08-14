@@ -1,0 +1,23 @@
+<html>
+  <head><title>Create URL</title></head>
+  <body>
+  <form id = 'form1'>
+    Input url: <input type='text' name='input_url'>
+    <input type="button" value="Create link" id='input_create' >
+  </form>
+
+    <script>
+      document.getElementById('input_create').onclick = function () {
+        var inputUrl = document.getElementById('input_url');
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(inputUrl.value);
+        a.appendChild(linkText);
+        a.title = inputUrl.value;
+        a.href = inputUrl.value;
+        document.body.appendChild(a);
+        document.write("<br>");
+        inputUrl.value='';
+      }
+    </script>
+  </body>
+</html>
